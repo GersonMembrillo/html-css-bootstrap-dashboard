@@ -1,0 +1,67 @@
+.debug{
+  border: 1px solid black;
+}
+
+header{
+  height: 80px;
+}
+
+.searchbar{
+  width: 100%;
+}
+
+.form-control{
+  background-color: #E5E5E5;
+}
+
+header ul li{
+  list-style: none;
+  padding: 0px 10px 0px 10px;
+}
+
+.form .fa-search{
+  top: 12px;
+  left: 12px;
+  color: black;
+}
+
+.form-control.form-input{
+  padding-left: 40px;
+}
+
+
+/* header ul li:first-child{
+  padding-left: 0px;
+} */
+
+header ul{
+  margin: auto;
+}
+
+header ul a{
+  color: grey;
+}
+
+.fa-solid.fa-bell{
+  color: orange;
+}
+
+.wrapper{
+  margin-top: 80px;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+
+}
+
+#sidebar{
+  width: 180px;
+  height: 100%;
+  background-color: #051E34;
+  background-image: url('../img/sidebar-bg.png');
+}
+
+main{
+  width: calc(100% - 180px);
+  height: 100%;
+  overflow-y: auto;
+}
