@@ -47,12 +47,43 @@
 			</div>
 		</header>
 		<div class="wrapper d-flex">
-			<nav id="sidebar" class="text-white">sidebar</nav>
+			<nav id="sidebar" class="text-white d-flex flex-column justify-content-between">
+        <div class="top-bar">
+          <button type="button" class="d-flex align-items-center btn btn-outline-light"><i class="fa-solid fa-house"></i> <span class="ps-2"><span>Home</span></span></button>
+          <button type="button" class="d-flex align-items-center btn btn-outline-light"><i class="fa-solid fa-chart-simple"></i> <span class="stats"><span>Stats</span></span></button>
+          <button type="button" class="d-flex align-items-center btn btn-outline-light"><i class="fa-solid fa-signal"></i> <span class="ps-2"><span>Signals</span></span></button>
+        </div>
+        <div class="bot-bar">
+          <button type="button" class="d-flex align-items-center btn btn-outline-light"><i class="fa-solid fa-gear"></i> <span class="ps-2"><span>Admin</span></span></button>
+        </div>
+      </nav>
 			<main class="">
 				<div class="aside bg-primary text-white">
-					<div class="container-fluid">aside</div>
+					<div class="container-fluid d-flex justify-content-between">
+            <div class="left">
+              <div class="d-flex align-items-baseline">
+                <span class="fs-1 fw-light">Boolean</span>
+                <div><span class="fw-normal badge rounded-pill text-white">Primary</span></div>
+              </div>
+              <div class="d-flex">
+                <div><span class="fw-normal badge rounded-pill text-white">3 app</span></div>
+                <span>»</span>
+                <div><span class="fw-normal badge rounded-pill text-white">Boolean mobile app</span></div>
+                <div><span class="fw-normal badge rounded-pill text-white">Boolean web app</span></div>
+                <div><span class="fw-normal badge rounded-pill text-white">Boolean blog app</span></div>
+              </div>
+            </div>
+            <div class="middle">
+              <span>Studenti online negli ultimi 30 minuti</span><br>
+              <span class="fs-2 fw-light">125</span>
+            </div>
+            <div class="right">
+              <span>Nuovo Studente</span>
+              <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
 				</div>
-				<section class="container fluid">
+				<section class="container-fluid">
 					<div class="row">
 						<div class="col-12 col-lg-8 debug">
 							<div class="row gy-4">
