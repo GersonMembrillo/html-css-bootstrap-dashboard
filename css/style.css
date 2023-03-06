@@ -37,8 +37,18 @@ header ul a {
   color: grey;
 }
 
+.dropdown .btn{
+  --bs-btn-padding-x: 0;
+    --bs-btn-padding-y: 0;
+    border: none;
+}
+
+.dropdown-toggle::after {
+  display: none}
+
 .fa-solid.fa-bell {
   color: orange;
+  padding-bottom: 10px;
 }
 
 .form .fa-search {
