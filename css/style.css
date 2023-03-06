@@ -2,6 +2,10 @@
   border: 1px solid black;
 }
 
+img{
+  width: 100%;
+}
+
 /* header */
 
 header{
@@ -102,6 +106,12 @@ main{
   overflow-y: auto;
 }
 
+.offcanvas.offcanvas-end{
+  width: auto;
+}
+
 .accordion-button:focus{
   box-shadow: none;
 }
+
+/* scusate il ritardo, venerdi visite mediche e sabato ospedale, non è stata una buona settimana, ho gia spiegato a Clelia la situazione */

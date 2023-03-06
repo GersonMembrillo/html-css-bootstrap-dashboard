@@ -58,11 +58,11 @@
         </div>
       </nav>
 			<main class="">
-				<div class="aside bg-primary text-white">
+				<div class="aside bg-primary text-white py-3">
 					<div class="container-fluid d-flex justify-content-between">
             <div class="left">
               <div class="d-flex align-items-baseline">
-                <span class="fs-1 fw-light">Boolean</span>
+                <span class="fs-2 fw-light">Boolean</span>
                 <div><span class="fw-normal badge rounded-pill text-white">Primary</span></div>
               </div>
               <div class="d-flex">
@@ -79,7 +79,86 @@
             </div>
             <div class="right">
               <span>Nuovo Studente</span>
-              <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-plus"></i></button>
+              <button class="btn btn-primary btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-plus"></i></button>
+
+<div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Inserisci nuovo studente</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="row d-flex">
+      <div class="col-6">Nome
+        <div class="mb-3">
+    <input type="name" class="form-control" id="exampleInputName1">
+  </div>
+      </div>
+      <div class="col-6">Cognome
+        <div class="mb-3">
+    <input type="last-name" class="form-control" id="exampleInputLastName1">
+  </div>
+      </div>
+    </div>
+    <div class="row d-flex">
+      <div class="col-6">Email
+        <div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+      </div>
+      <div class="col-6">Password
+        <div class="mb-3">
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">Indirizzo
+        <div class="mb-3">
+    <input type="adress" class="form-control" id="exampleInputAdress1">
+  </div>
+      </div>
+    </div>
+    <div class="row d-flex">
+      <div class="col-6">Città
+        <div class="mb-3">
+    <input type="city" class="form-control" id="exampleInputCity1">
+  </div>
+      </div>
+      <div class="col-6 d-flex">
+        <div class="col-8 pe-4">Stato
+          <select class="form-select" aria-label="Default select example">
+  <option selected>Scegli...</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+        </div>
+        <div class="col-4">CAP
+          <div class="mb-3">
+    <input type="cap" class="form-control" id="exampleInputCAP1">
+  </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="mb-3">
+  <label for="formFile" class="form-label">Foto</label>
+  <input class="form-control" type="file" id="formFile">
+</div>
+    </div>
+    <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+  </div>
+    <div class="row">
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Salva</button>
+        <button type="submit" class="btn btn-warning">Svuota</button>
+      </div>
+    </div>
+  </div>
+</div>
             </div>
           </div>
 				</div>
@@ -89,7 +168,7 @@
 							<div class="row gy-4">
 								<div class="col-12">
 									<div class="card">
-										<div class="card-header">Prossime classi</div>
+										<div class="card-header fs-3 fw-light">Prossime classi</div>
 										<ul class="list-group list-group-flush">
 											<li class="list-group-item">An item</li>
 											<li class="list-group-item">A second item</li>
@@ -99,15 +178,15 @@
 								</div>
 								<div class="col-12">
 									<div class="card">
-										<div class="card-header">F.A.Q.</div>
+										<div class="card-header fs-3 fw-light">F.A.Q.</div>
 										<div class="accordion accordion-flush " id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         Come aggiungere un nuovo studente?
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <strong>Deve sganciare gli €€€</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, architecto nisi dolorum at nulla quis vitae, vero nemo veritatis dolores itaque, aut neque. Dolorum blanditiis, iure animi, nobis quidem nisi eveniet laborum vitae sequi asperiores quos veritatis facere, voluptas tempora quisquam harum voluptatibus aperiam aut ipsa qui vel unde optio est. Praesentium, voluptates quos? Sit in ad nobis quam quisquam impedit nisi repellendus eos reprehenderit totam ratione neque esse, quod harum dolores itaque quos officiis culpa ut amet id sed?
       </div>
@@ -146,7 +225,7 @@
 							<div class="row gy-4">
 								<div class="col-12">
 									<div class="card">
-										<div class="card-header">Todo</div>
+										<div class="card-header fs-3 fw-light">Todo</div>
 										<ul class="list-group">
   <li class="list-group-item">
     <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
@@ -165,11 +244,16 @@
 								</div>
 								<div class="col-12">
 									<div class="card">
-										<div class="card-header">Featured</div>
+										<div class="card-header">
+                      <img src="/img/stats.jpeg" alt="">
+                      <span class="fs-5">Utenti attivi</span><br>
+                      <span class="">Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                    </div>
 										<ul class="list-group list-group-flush">
-											<li class="list-group-item">An item</li>
-											<li class="list-group-item">A second item</li>
-											<li class="list-group-item">A third item</li>
+											<li class="list-group-item">Gennaio: 1200</li>
+											<li class="list-group-item">Febbraio: 800</li>
+											<li class="list-group-item">Marzo: 1500</li>
+                      <li class="list-group-item"><a href="#">Visualizza report approfondita</a></li>
 										</ul>
 									</div>
 								</div>
