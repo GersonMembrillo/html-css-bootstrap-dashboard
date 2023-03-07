@@ -122,6 +122,18 @@ main{
   overflow-y: auto;
 }
 
+.col-3.text-center, .font-size{
+  font-size: 14px;
+}
+
+.rounded-circle.text-bg-danger{
+  padding: 10px 9px;
+}
+
+.btn-outline-secondary{
+  padding: 4px 8px;
+}
+
 .offcanvas.offcanvas-end{
   width: auto;
 }
